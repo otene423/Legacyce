@@ -1,0 +1,64 @@
+
+        .contact-us {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .contact-us h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-us .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-card i {
+            font-size: 24px;
+            color: #007bff;
+        }
+        .contact-card p {
+            margin: 0;
+        }
+        .contact-card a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form label {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }

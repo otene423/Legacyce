@@ -1,0 +1,63 @@
+/* Payment Information Section */
+.payment-info-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a40, #005FFF);
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.payment-info-section h2 {
+    font-size: 2em;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.payment-info-section p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    font-size: 1em;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+/* Course Link */
+.course-link {
+    margin-top: 20px;
+}
+
+.course-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #005FFF, #0072ff);
+    color: #005FFF;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.course-button:hover {
+    background: #357ABD;
+    transform: translateY(-3px);
+}

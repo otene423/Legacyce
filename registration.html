@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+
+     <ul class="nav-links">
+                <li><a href="index.html">Back To Home Page</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="advisory board.html">Advisory Board</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li><a href="contact us.html">Contact us/Inquiry</a></li>
+                <li><a href="timetable.html">Timetable/Venues</a></li>
+     </ul>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #005FFF;
+        }
+
+        .payment-section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #f1f5f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .payment-options {
+            margin-bottom: 20px;
+        }
+
+        .payment-option {
+            margin-bottom: 15px;
+        }
+
+        .payment-option input {
+            margin-right: 10px;
+        }
+
+        .bank-details {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .bank-details p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #005FFF;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background: linear-gradient(135deg, #1a1a40, #005FFF);
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #005FFF;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-section">
+    <h2>Payment Section</h2>
+    <form action="payment-verification.html" method="POST">
+        <!-- Payment Options -->
+        <div class="payment-options">
+            <h3>Select Payment Method</h3>
+
+            <div class="payment-option">
+                <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer" required>
+                <label for="bank-transfer">Bank Transfer</label>
+                <div class="bank-details">
+                    <p><strong>Account Name:</strong> Olumide Ahmed Adeboye</p>
+                    <p><strong>Account Number:</strong> 0439317741</p>
+                    <p><strong>Bank:</strong> GTBANK</p>
+                    <p><strong>Courses:</strong></p>
+                    <p><strong>O'LEVEL (WASSCE&NECO) GENERAL & ONLINE CLASS:</strong> ₦20,000</p>
+                    <p><strong>JUPEB General Class:</strong> ₦30,000</p>
+                    <p><strong>JUPEB Online Class:</strong> ₦20,000</p>
+                    <p><strong>SAT General Class:</strong> ₦50,000</p>
+                    <p><strong>SAT Online Class:</strong> ₦40,000</p>
+                    <p><strong>UTME and POST-UTME General Class:</strong> ₦25,000</p>
+                    <p><strong>UTME and POST-UTME Online Class:</strong> ₦20,000</p>
+
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="card-payment" name="payment-method" value="card-payment" required>
+                <label for="card-payment">Credit/Debit Card (Coming Soon)</label>
+            </div>
+        </div>
+
+        <!-- User Details -->
+        <div class="form-group">
+            <label for="amount">Amount (₦)</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Course Selected</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="course1">O'LEVEL (WASSCE&NECO) GENERAL CLASS</option>
+                <option value="course2">O'LEVEL (WASSCE&NECO) ONLINE CLASS</option>
+                <option value="course3">JUPEB General Class</option>
+                <option value="course4">JUPEB Online Class</option>
+                <option value="course5">SAT General Class</option>
+                <option value="course6">SAT Online Class</option>
+                <option value="course7">UTME and POST-UTME General Class</option>
+                <option value="course8">UTME and POST-UTME Online Class</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Proceed to Verify Once Payment Has Been Made</button>
+    </form>
+</div>
+
+<div class="footer">
+    <p>Thank you for choosing Legacy Center.</p>
+</div>
+
+</body>
+</html>
