@@ -107,6 +107,45 @@ header {
     transform: scale(1.1);
 }
 
+/* For mobile devices */
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Instead of this */
+.container {
+    width: 800px;
+}
+
+/* Use this */
+.container {
+    max-width: 50%; /* Adjust dynamically */
+    margin: 0 auto;
+}
+
+img, video {
+    max-width: 50%;
+    height: 50%;
+}
+
 /* Main Section */
 main {
     padding: 60px 20px;
