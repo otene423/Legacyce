@@ -831,34 +831,4 @@ section {
     float: right;
     font-size: 1.5rem;
 
-.container {
-    width: 90%; /* Adjusts based on screen size */
-    max-width: 1200px; /* Keeps layout neat on large screens */
-}
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    .header {
-        flex-direction: column;
-    }
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.item {
-    flex: 1 1 calc(50% - 20px); /* Adjust width dynamically */
-    margin: 10px;
-}
-
-    img, video {
-    max-width: 100%;
-    height: auto;
-}
-
-    cursor: pointer;
-    color: #333;
-}
